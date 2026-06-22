@@ -38,17 +38,12 @@
    ============================================================ */
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{
+body
+{background: url("ro2a.jpg") center center / cover no-repeat fixed;
   font-family:var(--font-body);
   color:var(--ivory);
-  background:
-    radial-gradient(ellipse at 20% 0%, rgba(230,57,90,0.18), transparent 55%),
-    radial-gradient(ellipse at 85% 15%, rgba(240,201,135,0.14), transparent 50%),
-    linear-gradient(160deg, var(--noir) 0%, var(--wine) 45%, var(--velvet) 75%, var(--noir) 100%);
-  background-attachment:fixed;
+  line-height:1.6;
   overflow-x:hidden;
-  min-height:100vh;
-  position:relative;
 }
 body.no-scroll{overflow:hidden;height:100vh;}
 img{max-width:100%;display:block;}
@@ -723,6 +718,7 @@ footer{
     border-radius:18px;
     display:block;
 }
+}
 
 
 </style>
@@ -773,21 +769,6 @@ footer{
 </section>
 
 <!-- ============================================================
-     PHOTO GALLERY
-     ============================================================ -->
-<section class="section" id="gallery">
-  <h2 class="section-title reveal">الفديو المفضل بتاعي</h2>
-  <p class="section-sub reveal">فديو هحتفظ بيه طول الوقت</p>
-
-  <div class="gallery-grid">
-    <div class="photo-frame main">
-      <video controls autoplay muted loop playsinline>
-        <source src="1000790681.mp4" type="video/mp4">
-      </video>
-      <div class="frame-label">يوم لا يُنسى</div>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================================
      LOVE LETTER SECTION
@@ -808,7 +789,6 @@ footer{
     <div class="letter-signature">— لك دايماً ❤️</div>
   </div>
 </section>
-
 <!-- ============================================================
      MEMORIES TIMELINE
      ============================================================ -->
@@ -980,7 +960,7 @@ footer{
   <input type="range" class="player-volume" id="player-volume" min="0" max="1" step="0.01" value="0.6">
   <!-- ✏️ ضعي رابط ملف الموسيقى الخاص بك في خاصية src أدناه -->
   <audio id="bg-audio" loop preload="none">
-    <source src="https://youtu.be/KkKK5vwpAvw?list=RD7t0u-1vcFjY" type="audio/mpeg">
+    <source src="07.ShababGamed.Com_Ben Edek_Asala.mp3" type="audio/mpeg">
   </audio>
 </div>
 
@@ -1236,7 +1216,7 @@ setInterval(updateLoveCounter, 1000);
    8) العد التنازلي للقاء القادم (Future countdown)
    ✏️ غيّري هذا التاريخ لتاريخ اللقاء القادم
    ------------------------------------------------------------ */
-var nextMeetingDate = new Date('2026-07-0:01:00'); // ✏️ عدّلي هذا التاريخ
+var nextMeetingDate = new Date('2026-07-01T00:01:00'); // ✏️ عدّلي هذا التاريخ
 
 function updateCountdown() {
   var now = new Date();
